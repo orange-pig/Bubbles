@@ -115,19 +115,19 @@ f:SetScript("OnEnter", function()
   end
   
   GameTooltip:AddLine("|cfff58cbaBubbles (|cffffffff" .. b .. "|cfff58cba)")
-  GameTooltip:AddLine("|cffaaaaaaMaximum amount of rested bubbles is 30. To fully rest with one tent takes around 13 minutes. Multiple tents can stack and speed up resting.", 0, 0, 0, true)
+  GameTooltip:AddLine("|cffaaaaaa最大双倍经验格数为 30，休息能获得的最多经验是当前等级总经验的 1.5 倍，一个帐篷休息满大约需要 13 分钟，多个帐篷可以叠加加快休息速度。", 0, 0, 0, true)
   GameTooltip:AddLine(" ")
-  GameTooltip:AddDoubleLine("|cffffffffRested", "|cffaaaaaa" .. r .. " XP")
+  GameTooltip:AddDoubleLine("|cffffffff已获得的双倍经验", "|cffaaaaaa" .. r .. " XP")
   if r + x > m then
-    GameTooltip:AddDoubleLine("|cffffffffRested+", "|cffaaaaaa" .. r + x - m .. " XP")
+    GameTooltip:AddDoubleLine("|cffffffff累计到下级的双倍经验", "|cffaaaaaa" .. r + x - m .. " XP")
   end
-  GameTooltip:AddDoubleLine("|cffffffffStill", "|cffaaaaaa" .. m - x .. " XP")
-  GameTooltip:AddDoubleLine("|cffffffffPercent", "|cffaaaaaa" .. math.floor(x / m * 100) .. "%")
+  GameTooltip:AddDoubleLine("|cffffffff升级所需", "|cffaaaaaa" .. m - x .. " XP")
+  GameTooltip:AddDoubleLine("|cffffffff目前占比", "|cffaaaaaa" .. math.floor(x / m * 100) .. "%")
   
-  GameTooltip:AddDoubleLine("|cffffffffTime to full rest", "|cfff58cba" .. time .. " |cffaaaaaamin")
+  GameTooltip:AddDoubleLine("|cffffffff预计休息满时间", "|cfff58cba" .. time .. " |cffaaaaaa分钟")
 
   if tents > 0 then
-    GameTooltip:AddDoubleLine("|cffffffffStatus", "|cffaaaaaaGaining from " .. tents .. " tent(s)")
+    GameTooltip:AddDoubleLine("|cffffffff状态", "|cffaaaaaaGaining from " .. tents .. " 顶帐篷")
   end
 
   GameTooltip:Show()
