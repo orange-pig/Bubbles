@@ -127,7 +127,7 @@ f:SetScript("OnEnter", function()
   GameTooltip:AddDoubleLine("|cffffffff预计休息满时间", "|cfff58cba" .. time .. " |cffaaaaaa分钟")
 
   if tents > 0 then
-    GameTooltip:AddDoubleLine("|cffffffff状态", "|cffaaaaaaGaining from " .. tents .. " 顶帐篷")
+    GameTooltip:AddDoubleLine("|cffffffff状态", "|cffaaaaaa从 " .. tents .. " 顶帐篷受益")
   end
 
   GameTooltip:Show()
