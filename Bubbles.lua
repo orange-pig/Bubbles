@@ -121,15 +121,19 @@ f:SetScript("OnEnter", function()
   if r + x > m then
     GameTooltip:AddDoubleLine("|cffffffff累计到下级的双倍经验", "|cffaaaaaa" .. r + x - m .. " XP")
   end
-  GameTooltip:AddDoubleLine("|cffffffff升级所需", "|cffaaaaaa" .. m - x .. " XP")
+  GameTooltip:AddDoubleLine("|cffffffff升级仍需", "|cffaaaaaa" .. m - x .. " XP")
   GameTooltip:AddDoubleLine("|cffffffff当前经验", "|cffaaaaaa" .. math.floor(x / m * 100) .. "%")
   
   GameTooltip:AddDoubleLine("|cffffffff预计休息满时间", "|cfff58cba" .. time .. " |cffaaaaaa分钟")
 
   if tents > 0 then
-    GameTooltip:AddDoubleLine("|cffffffff状态", "|cffaaaaaa从 " .. tents .. " 顶帐篷受益")
+    GameTooltip:AddDoubleLine("|cffffffff状态", "|cffaaaaaa在 " .. tents .. " 顶帐篷下休息")
   elseif r / m >= 1.5 then
     GameTooltip:AddDoubleLine("|cffffffff状态", "|cffaaaaaa休息完全，经验饱满")
+  elseif r / m <= 0.45 then
+    GameTooltip:AddDoubleLine("|cffffffff状态", "|cffaaaaaa旅途疲惫，可适时小憩哦~")
+  else
+    GameTooltip:AddDoubleLine("|cffffffff状态", "|cffaaaaaa旅途中（大地母亲在护佑着你！）")
   end
 
   GameTooltip:Show()
