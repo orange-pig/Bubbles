@@ -128,6 +128,8 @@ f:SetScript("OnEnter", function()
 
   if tents > 0 then
     GameTooltip:AddDoubleLine("|cffffffff状态", "|cffaaaaaa从 " .. tents .. " 顶帐篷受益")
+  elseif r / m >= 1.5 then
+    GameTooltip:AddDoubleLine("|cffffffff状态", "|cffaaaaaa休息完全，经验饱满")
   end
 
   GameTooltip:Show()
