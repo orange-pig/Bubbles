@@ -1,6 +1,6 @@
 ## 汉化版本
 
-Bubbles(气泡/经验格)插件适用于经典魔兽Vanilla(1.12)版本的插件。
+Bubbles(经验格)插件适用于经典魔兽Vanilla(1.12)版本的插件。
 
 本仓库只是对源仓库中的UI文本进行了汉化，未作其他修改。
 
@@ -8,7 +8,7 @@ Bubbles(气泡/经验格)插件适用于经典魔兽Vanilla(1.12)版本的插件
 
 ## Bubbles
 
-一个显示可用休息经验值气泡的插件，显示当前有多少帐篷在提供它们以及达到 150%休息经验值所需剩余时间。
+一个显示可用双倍经验格的插件，显示当前受益于多少顶帐篷以及达到 150% 完全休息双倍经验所需的时间。
 
 ```
 已获得的双倍经验            休息总共获得的双倍经验
@@ -20,6 +20,7 @@ Bubbles(气泡/经验格)插件适用于经典魔兽Vanilla(1.12)版本的插件
 ```
 
 ## Bubbles
+
 Addon that displays available rested XP bubbles, how many tents are actively providing them and the remaining time until 150% rested XP.
 
 ```

@@ -1,6 +1,8 @@
 ## Interface: 11200
 ## Title: |cfff58cbaBubbles
+## Title-zhCN: |cfff58cba经验格(Bubbles)
 ## Author: Computer Equipment Group
 ## Notes: Displays available rested XP bubbles
-## Version: 1.1
+## Notes-zhCN: 显示可用的双倍经验格（首次安装后 Bubbles 文字会出现在屏幕中央，拖动到合适的位置即可，没有提供锁定功能）
+## Version: 1.1.1
 Bubbles.lua
