@@ -122,7 +122,7 @@ f:SetScript("OnEnter", function()
     GameTooltip:AddDoubleLine("|cffffffff累计到下级的双倍经验", "|cffaaaaaa" .. r + x - m .. " XP")
   end
   GameTooltip:AddDoubleLine("|cffffffff升级所需", "|cffaaaaaa" .. m - x .. " XP")
-  GameTooltip:AddDoubleLine("|cffffffff目前占比", "|cffaaaaaa" .. math.floor(x / m * 100) .. "%")
+  GameTooltip:AddDoubleLine("|cffffffff当前经验", "|cffaaaaaa" .. math.floor(x / m * 100) .. "%")
   
   GameTooltip:AddDoubleLine("|cffffffff预计休息满时间", "|cfff58cba" .. time .. " |cffaaaaaa分钟")
 
